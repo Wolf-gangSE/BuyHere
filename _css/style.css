@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header#cabecalho img#logo{
+    margin-left: 50px;
+	top: 5px;
+    width: 250px;
+    margin-bottom: -30px;
+}
+
+header#cabecalho nav#menu{
+    display: block;
+}
+
+nav#menu ul {
+    position: absolute;
+    list-style: none;
+    right: 100px;
+    top: 10px;
+}
+
+nav#menu li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18pt;
+	display: inline-block;
+	padding: 8px;
+	margin: 2px;
+	transition: color 1s;
+}
+
+nav#menu li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu li a:hover {
+	color: #008037;
+}
+
+footer#rodape {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top:30px;
+    padding-bottom: 30px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+div#corpo {
+    background-color: #f9af23;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+div.produtos {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-bottom: 10px;
+    align-content: center;
+}
+
+div.lista-produtos {
+    margin-bottom: 50px;
+    margin-right: 75px;
+    margin-left: 150px;
+    display: inline-block;
+}
+
+div.produto {
+    width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    background-color: white;
+}
+
+h1#introducao {
+    font-size: 30pt;
+    padding-top: 30px;
+    margin-left: 160px;
+}
+
+img.img-p {
+    width: 400px;
+}
+
+h2.nome-p {
+    text-align: center;
+    color: black;
+}
+
+h1.preco-p {
+    text-align: center;
+    color: #008037;
+}
