@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="_css/style.css"/>
+    <link rel="stylesheet" href="_css/produto.css"/>
     <title>BuyHere - Produto</title>
 </head>
 <body>
@@ -18,12 +19,35 @@
             </ul>
         </nav>
     </header>
-    <section id="corpo">
-        <div id="produto">
-            Oiiii <br/>
-            Como vai
+    <div id="corpo">
+        <h1 id="introducao">Produto selecionado</h1>
+        <div id="principal">
+            <div id="produto">
+                <div id="img-div">
+                    <img id="img-p" src="_images/Item_sem_imagem.png"/>
+                </div>
+                <div id="detalhes">
+                    <p id="nome-p" class="nome-p">Carregando...</p>
+                    <h1 id="preco-p" class="preco-p">R$ 29,00</h1>
+                    <img id="linha" src="_images/linha.png"/>
+                    <p>
+                        <label for="quantidade">Quantidade</label>
+                        <input type="number" name="quantidade" id="quantidade" required="required" name="quantidade"/>
+                    </p>
+                    <p id="frete">Frete: R$</p>
+                    <div id="buttons">
+                        <button id="descricao" type="submit">Descrição</button>
+                        <button id="pedido" type="submit">Fazer Pedido</button>
+                    </div>
+                    <p id="estoque">Em estoque:</p>
+                </div>
+            </div>
+            <div id="descricao">
+                <h1 id="titulo">Descrição do produto</h1>
+                <p id="texto">Aqui fica a descrição</p>
+            </div>
         </div>
-    </section>
-    <footer id="rodape"><h4>Feito por Lucas Henrique</h4></footer>
+    </div>
+    <footer id="rodape"><h4>Feito por ------</h4></footer>
 </body>
 </html>
