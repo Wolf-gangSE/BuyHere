@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="_css/produto.css"/>
     <title>BuyHere - Produto</title>
 </head>
+<script src="_javascript/produto.js"></script>
 <body>
     <header id="cabecalho">
         <img id="logo" src="_images/BuyHere.png"/>
@@ -36,8 +37,8 @@
                     </p>
                     <p id="frete">Frete: R$</p>
                     <div id="buttons">
-                        <button id="descricao" type="submit">Descrição</button>
-                        <button id="pedido" type="submit">Fazer Pedido</button>
+                        <button id="btn-descricao" type="submit" onclick="ocultarExibir()">Descrição</button>
+                        <button id="btn-pedido" type="submit">Fazer Pedido</button>
                     </div>
                     <p id="estoque">Em estoque:</p>
                 </div>

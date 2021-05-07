@@ -60,7 +60,7 @@ button {
     border-radius: 4px;
 }
 
-button#descricao {
+button#btn-descricao {
     margin-right: 50px;
     background-color: white;
     font-weight: bold;
@@ -69,12 +69,12 @@ button#descricao {
     
 }
 
-button#descricao:hover {
+button#btn-descricao:hover {
     background-color: black;
     color: white;
 }
 
-button#pedido {
+button#btn-pedido {
     background-color: black;
     font-size: 20pt;
     font-weight: bold;
@@ -97,6 +97,7 @@ div#descricao {
     text-align: center;
     border-radius: 4px;
     padding-bottom: 50px;
+    display: none;
 }
 
 div#descricao h1#titulo {
