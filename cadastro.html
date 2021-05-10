@@ -11,74 +11,74 @@
 <body>
     <header id="cabecalho">
         <img id="logo" src="_images/BuyHere.png"/>
-        <nav id="menu">
-            <ul>
-                <li><a href="index.html">Inicial</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="profile.html">Perfil</a></li>
-            </ul>
-        </nav>
     </header>
     <div id="corpo">
         <h1 id="introducao">Faça seu login ou cadastre-se:</h1>
-        <div id="cadastro" class="box">
-            <h1>Cadastro</h1>
-            <p> 
-                <label for="nome_cad">Seu nome</label>
-                <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
-            </p>
-            <p>
-                <label for="sobrenome_cad">Seu sobrenome</label>
-                <input id="sobrenome_cad" name="sobrenome_cad" required="required" type="text" placeholder="sobrenome"/>
-            </p>
-            <p> 
-                <label for="email_cad">Seu e-mail</label>
-                <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@email.com"/> 
-            </p>
-            <p> 
-                <label for="senha_cad">Sua senha</label>
-                <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
-            </p>
-            <p>
-                <label for="tel_cad">Seu telefone</label>
-                <input id="tel_cad" name="tel_cad" required="required" type="tel" maxlength="14" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}" placeholder="ex. (99) 1234-5678"/>
-            </p>
-            <p> 
-                <label for="cep_cad">Seu CEP </label>
-                <input id="cep_cad" name="cep_cad" required="required" type="text" maxlength="8" placeholder="ex. 12345678 (apenas números)"/> 
-            </p>
-            <p> 
-                <label for="cidade_cad">Sua cidade</label>
-                <input id="cidade_cad" name="cidade_cad" required="required" type="text" placeholder="ex. Garanhuns"/> 
-            </p>
-            <p> 
-                <label for="bairro_cad">Seu bairro</label>
-                <input id="bairro_cad" name="bairro_cad" required="required" type="text" placeholder="ex. Centro"/> 
-            </p>
-            <p> 
-                <label for="rua_cad">Sua rua</label>
-                <input id="rua_cad" name="rua_cad" required="required" type="text" placeholder="ex. Rua Manoel Borba"/> 
-            </p>
-            <p> 
-                <label for="num_cad">Seu número</label>
-                <input id="num_cad" name="num_cad" required="required" type="number" maxlenght="4" placeholder="ex. 99"/> 
-            </p>
-            <p>
-                <label>Selecione o tipo da conta:</label>
-                <select id="tipo_cad" name="tipo_cad">
-                    <option value="cliente">Cliente</option>
-                    <option value="vendedor">Vendedor</option>
-                </select>
-            </p>
-            <p> 
-                <input type="submit" value="Cadastrar" /> 
-            </p>
-            
-            <p class="link">  
-                Já tem conta?
-                <a href="login.html"> Ir para Login </a>
-            </p>
-        </div>
+        <form id="fcadastro" method="post" action="cadastro.php">
+            <div id="cadastro" class="box">
+                <h1>Cadastro</h1>
+                <p> 
+                    <label for="nome_cad">Seu nome</label>
+                    <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+                </p>
+                <p>
+                    <label for="sobrenome_cad">Seu sobrenome</label>
+                    <input id="sobrenome_cad" name="sobrenome_cad" required="required" type="text" placeholder="sobrenome"/>
+                </p>
+                <p> 
+                    <label for="email_cad">Seu e-mail</label>
+                    <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@email.com"/> 
+                </p>
+                <p> 
+                    <label for="senha_cad">Sua senha</label>
+                    <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+                </p>
+                <p>
+                    <label for="tel_cad">Seu telefone</label>
+                    <input id="ddd_cad" name="ddd_cad" required="required" type="tel" maxlength="2" pattern="[0-9]{2}" placeholder="ex. 99"/>
+                    <input id="tel_cad" name="tel_cad" required="required" type="tel" maxlength="10" pattern="[0-9]{5}-[0-9]{4}" placeholder="ex. 91234-5678"/>
+                </p>
+                <p> 
+                    <label for="cep_cad">Seu CEP </label>
+                    <input id="cep_cad" name="cep_cad" required="required" type="text" maxlength="8" placeholder="ex. 12345678 (apenas números)"/> 
+                </p>
+                <p> 
+                    <label for="cidade_cad">Sua cidade</label>
+                    <input id="cidade_cad" name="cidade_cad" required="required" type="text" placeholder="ex. Garanhuns"/> 
+                </p>
+                <p> 
+                    <label for="bairro_cad">Seu bairro</label>
+                    <input id="bairro_cad" name="bairro_cad" required="required" type="text" placeholder="ex. Centro"/> 
+                </p>
+                <p> 
+                    <label for="rua_cad">Sua rua</label>
+                    <input id="rua_cad" name="rua_cad" required="required" type="text" placeholder="ex. Rua Manoel Borba"/> 
+                </p>
+                <p> 
+                    <label for="num_cad">Seu número</label>
+                    <input id="num_cad" name="num_cad" required="required" type="number" maxlenght="4" placeholder="ex. 99"/> 
+                </p>
+                <p>
+                    <label for="comp_cad">Seu complemento</label>
+                    <input id="comp_cad" name="comp_cad" type="text" placeholder="ex. Casa, Apt, Pt. Referência, etc."/>
+                </p>
+                <p>
+                    <label>Selecione o tipo da conta:</label>
+                    <select id="tipo_cad" name="tipo_cad">
+                        <option value="Cliente">Cliente</option>
+                        <option value="Vendedor">Vendedor</option>
+                    </select>
+                </p>
+                <p> 
+                    <input type="submit" value="Cadastrar" /> 
+                </p>
+                
+                <p class="link">  
+                    Já tem conta?
+                    <a href="login.html"> Ir para Login </a>
+                </p>
+            </div>
+        </form>
     </div>
     <footer id="rodape"><p>Feito por ------ <br/> Universidade de Pernambuco - Campus Garanhuns</p></footer>
 </body>

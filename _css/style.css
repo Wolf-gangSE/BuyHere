@@ -1,8 +1,16 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+   /*      #f9af23 (cor da logo)      */
+
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+header#cabecalho {
+    margin-bottom: 30px;
 }
 
 header#cabecalho img#logo{
@@ -80,9 +88,11 @@ div.produto {
 }
 
 h1#introducao {
-    font-size: 30pt;
+    font-size: 20pt;
     padding-top: 30px;
     margin-left: 160px;
+    color: rgb(49, 49, 49);
+    font-family: 'Bree Serif', serif;
 }
 
 img.img-p {

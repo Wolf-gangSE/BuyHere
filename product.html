@@ -14,9 +14,8 @@
         <img id="logo" src="_images/BuyHere.png"/>
         <nav id="menu">
             <ul>
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="profile.html">Perfil</a></li>
+                <li><a href="cliente.html">Inicial</a></li>
+                <li><a href="profile_cliente.html">Perfil</a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +32,7 @@
                     <img id="linha" src="_images/linha.png"/>
                     <p>
                         <label for="quantidade">Quantidade</label>
-                        <input type="number" name="quantidade" id="quantidade" required="required" name="quantidade"/>
+                        <input type="number" oninput="this.value = Math.abs(this.value)" min='0' name="quantidade" id="quantidade" required="required" name="quantidade"/>
                     </p>
                     <p id="frete">Frete: R$</p>
                     <div id="buttons">
@@ -46,6 +45,7 @@
             <div id="descricao">
                 <h1 id="titulo">Descrição do produto</h1>
                 <p id="texto">Aqui fica a descrição</p>
+                <p id="vendedor">Vendido por: </p>
             </div>
         </div>
     </div>

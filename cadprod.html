@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/cadastro.css"/>
+    <link rel="stylesheet" href="_css/style.css"/>
+    <title>BuyHere - Cadastro</title>
+</head>
+<body>
+    <header id="cabecalho">
+        <img id="logo" src="_images/BuyHere.png"/>
+        <nav id="menu">
+            <ul>
+                <li><a href="cadprod.html">Cadastrar Produto</a></li>
+                <li><a href="profile_vendedor.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="corpo">
+        <h1 id="introducao">Cadastre seu produto:</h1>
+        <div id="cadastro" class="box">
+            <h1>Cadastro</h1>
+            <p> 
+                <label for="nome_cad">Nome do produto</label>
+                <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+            </p>
+            <p>
+                <label for="img-pd">Imagem do produto</label>
+                <input type="file" required="required" id="img-pd" name="img-pd" accept="image/png, image/jpeg">
+            </p>
+            <p>
+                <label for="valor">Valor do produto</label>
+                <input id="valor" required="required" name="valor" type="text">
+            </p>
+            <p>
+                <label for="valor-frete">Valor do frete</label>
+                <input id="valor-frete" required="required" name="valor-frete" type="text">
+            </p>
+            <p>
+                <label for="estoque">Estoque do produto</label>
+                <input type="number" oninput="this.value = Math.abs(this.value)" min='1' name="estoque" id="estoque" required="required"/>
+            </p>
+            <p>
+                <label for="lb-descricao">Descrição do produto</label>
+                <textarea required="required" name="tMsg" id="cMsg" cols="45" rows="5" placeholder="descrição..."></textarea>
+            </p>
+            
+            <p> 
+                <input type="submit" value="Cadastrar" /> 
+            </p>
+        </div>
+    </div>
+    <footer id="rodape"><p>Feito por ------ <br/> Universidade de Pernambuco - Campus Garanhuns</p></footer>
+</body>
+</html>
