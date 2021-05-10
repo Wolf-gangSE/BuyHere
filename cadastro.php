@@ -1,6 +1,4 @@
 <?php include_once"config.php"; ?>
-<html>
-<body>
 <?php
 $email = $_POST['email_cad'];
 $senha = md5($_POST['senha_cad']);

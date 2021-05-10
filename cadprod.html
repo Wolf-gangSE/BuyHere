@@ -13,8 +13,8 @@
         <img id="logo" src="_images/BuyHere.png"/>
         <nav id="menu">
             <ul>
-                <li><a href="cadprod.html">Cadastrar Produto</a></li>
-                <li><a href="profile_vendedor.html">Perfil</a></li>
+                <li><a href="cadprod.html">Cadastro</a></li>
+                <li><a href="profile_vendedor.php">Perfil</a></li>
             </ul>
         </nav>
     </header>
@@ -24,27 +24,27 @@
             <h1>Cadastro</h1>
             <p> 
                 <label for="nome_cad">Nome do produto</label>
-                <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+                <input autocomplete="off" id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
             </p>
             <p>
                 <label for="img-pd">Imagem do produto</label>
-                <input type="file" required="required" id="img-pd" name="img-pd" accept="image/jpeg">
+                <input autocomplete="off" type="file" required="required" id="img-pd" name="img-pd" accept="image/jpeg">
             </p>
             <p>
                 <label for="valor">Valor do produto</label>
-                <input id="valor" required="required" name="valor" type="text">
+                <input autocomplete="off" id="valor" required="required" name="valor" type="text">
             </p>
             <p>
                 <label for="valor-frete">Valor do frete</label>
-                <input id="valor-frete" required="required" name="valor-frete" type="text">
+                <input autocomplete="off" id="valor-frete" required="required" name="valor-frete" type="text">
             </p>
             <p>
                 <label for="estoque">Estoque do produto</label>
-                <input type="number" oninput="this.value = Math.abs(this.value)" min='1' name="estoque" id="estoque" required="required"/>
+                <input autocomplete="off" type="number" oninput="this.value = Math.abs(this.value)" min='1' name="estoque" id="estoque" required="required"/>
             </p>
             <p>
                 <label for="lb-descricao">Descrição do produto</label>
-                <textarea required="required" name="tMsg" id="cMsg" cols="45" rows="5" placeholder="descrição..."></textarea>
+                <textarea autocomplete="off" required="required" name="tMsg" id="cMsg" cols="45" rows="5" placeholder="descrição..."></textarea>
             </p>
             
             <p> 
