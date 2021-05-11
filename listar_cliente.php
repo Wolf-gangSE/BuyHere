@@ -5,8 +5,8 @@ mysqli_select_db($conn,'$dbname');
 
 if(isset($_SESSION['tipo'])){
     $tipo_session = $_SESSION['tipo'];
-    $email_session = $_SESSION['email'];
-    $sql = "SELECT * FROM cliente where Email_cliente = '$email_session'";
+    $ID_session = $_SESSION['id'];
+    $sql = "SELECT * FROM cliente where ID_cliente = '$ID_session'";
     
     if ($tipo_session == 'Cliente') {
         $resultado = mysqli_query($conn, $sql);

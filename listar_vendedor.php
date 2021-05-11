@@ -5,8 +5,8 @@ mysqli_select_db($conn,'$dbname');
 
 if(isset($_SESSION['tipo'])){
     $tipo_session = $_SESSION['tipo'];
-    $email_session = $_SESSION['email'];
-    $sql = "SELECT * FROM vendedor where Email_vendedor = '$email_session'";
+    $ID_session = $_SESSION['id'];
+    $sql = "SELECT * FROM vendedor where ID_vendedor = '$ID_session'";
     if ($tipo_session == 'Vendedor') {
         $resultado = mysqli_query($conn, $sql);
         if(($resultado) AND (mysqli_num_rows($resultado) != 0)) {

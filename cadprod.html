@@ -20,37 +20,40 @@
     </header>
     <div id="corpo">
         <h1 id="introducao">Cadastre seu produto:</h1>
-        <div id="cadastro" class="box">
-            <h1>Cadastro</h1>
-            <p> 
-                <label for="nome_cad">Nome do produto</label>
-                <input autocomplete="off" id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
-            </p>
-            <p>
-                <label for="img-pd">Imagem do produto</label>
-                <input autocomplete="off" type="file" required="required" id="img-pd" name="img-pd" accept="image/jpeg">
-            </p>
-            <p>
-                <label for="valor">Valor do produto</label>
-                <input autocomplete="off" id="valor" required="required" name="valor" type="text">
-            </p>
-            <p>
-                <label for="valor-frete">Valor do frete</label>
-                <input autocomplete="off" id="valor-frete" required="required" name="valor-frete" type="text">
-            </p>
-            <p>
-                <label for="estoque">Estoque do produto</label>
-                <input autocomplete="off" type="number" oninput="this.value = Math.abs(this.value)" min='1' name="estoque" id="estoque" required="required"/>
-            </p>
-            <p>
-                <label for="lb-descricao">Descrição do produto</label>
-                <textarea autocomplete="off" required="required" name="tMsg" id="cMsg" cols="45" rows="5" placeholder="descrição..."></textarea>
-            </p>
-            
-            <p> 
-                <input type="submit" value="Cadastrar" /> 
-            </p>
-        </div>
+        <form id="fcadprod" method="post" action="cadprod.php" enctype="multipart/form-data">
+            <div id="cadastro" class="box">
+                <h1>Cadastro</h1>
+                <p> 
+                    <label for="nome_cad">Nome do produto</label>
+                    <input autocomplete="off" id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+                </p>
+                <p>
+                    <label for="img-pd">Imagem do produto</label>
+                    <input type="hidden" name="MAX_FILE_SIZE" value="99999999"/>
+                    <input type="file" required="required" id="img-pd" name="img-pd" accept="image/jpeg"/>
+                </p>
+                <p>
+                    <label for="valor">Valor do produto</label>
+                    <input autocomplete="off" id="valor" required="required" oninput="this.value = Math.abs(this.value)" name="valor" type="number" step="any"/>
+                </p>
+                <p>
+                    <label for="valor-frete">Valor do frete</label>
+                    <input autocomplete="off" id="valor-frete" required="required" oninput="this.value = Math.abs(this.value)" name="valor-frete" type="number" step="any"/>
+                </p>
+                <p>
+                    <label for="estoque">Estoque do produto</label>
+                    <input autocomplete="off" type="number" oninput="this.value = Math.abs(this.value)" min='1' name="estoque" id="estoque" required="required"/>
+                </p>
+                <p>
+                    <label for="lb-descricao">Descrição do produto</label>
+                    <textarea autocomplete="off" required="required" name="lb-descricao" id="lb-descricao" cols="45" rows="5" placeholder="descrição..."></textarea>
+                </p>
+                
+                <p> 
+                    <input type="submit" value="Cadastrar" /> 
+                </p>
+            </div>
+        </form>
     </div>
     <footer id="rodape"><p>Feito por ------ <br/> Universidade de Pernambuco - Campus Garanhuns</p></footer>
 </body>
