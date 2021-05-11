@@ -17,7 +17,7 @@ if ($session_tipo == 'Vendedor'){
         $imagem_nome = $pasta_dir . $imagem;
         move_uploaded_file($_FILES["img-pd"]['tmp_name'], $imagem_nome);
 
-        $sql = "INSERT INTO produto (ID_produto, ID_vendedor, Estoque, Imagem, Descricao, Preco_produto, Preco_frete) VALUES (default, '$session_ID', '$estoque', '$imagem_nome', '$descricao', '$valor', '$frete')";
+        $sql = "INSERT INTO produto (ID_produto, ID_vendedor, Nome, Estoque, Imagem, Descricao, Preco_produto, Preco_frete) VALUES (default, '$session_ID', '$nome', '$estoque', '$imagem_nome', '$descricao', '$valor', '$frete')";
         if(mysqli_query($conn, $sql)){
             echo"<script language='javascript' type='text/javascript'>alert('A imagem foi salva na base de dados.');window.location.href='vendedor.html'</script>";
         }else{

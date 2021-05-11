@@ -15,7 +15,7 @@ if(isset($_SESSION['tipo'])){
                 <?php
                 while($row = mysqli_fetch_array($resultado)){
                     ?>
-                    <div id=dados>
+                    <div id=dados> 
                         <p>
                             Nome <h4><?php echo $row['Nome_cliente']; ?></h4>
                         </p>

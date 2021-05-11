@@ -7,7 +7,7 @@ $tipo = $_POST['tipo_login'];
 mysqli_select_db($conn,'$dbname');
 
     if ($tipo == 'Cliente'){
-        $sql = "SELECT ID_cliente, Email_cliente, Senha_cliente FROM cliente WHERE Email_cliente = '$email' AND Senha_cliente = '$senha'";
+        $sql = "SELECT ID_cliente, Nome_cliente, Email_cliente, Senha_cliente FROM cliente WHERE Email_cliente = '$email' AND Senha_cliente = '$senha'";
         $resultado = mysqli_query($conn, $sql);
         $row_fetch = mysqli_fetch_array($resultado);
         $row = mysqli_num_rows($resultado);
@@ -17,11 +17,12 @@ mysqli_select_db($conn,'$dbname');
         } else{
             $_SESSION['tipo'] = $tipo;
             $_SESSION['id'] = $row_fetch['ID_cliente'];
+            $_SESSION['nome'] = $row_fetch['Nome_cliente'];
             header("Location:index.php");
             exit();
         }
     } else {
-        $sql = "SELECT ID_vendedor, Email_vendedor, Senha_vendedor FROM vendedor WHERE Email_vendedor = '$email' AND Senha_vendedor = '$senha'";
+        $sql = "SELECT ID_vendedor, Email_vendedor, Senha_vendedor, Nome_vendedor FROM vendedor WHERE Email_vendedor = '$email' AND Senha_vendedor = '$senha'";
         $resultado = mysqli_query($conn, $sql);
         $row_fetch = mysqli_fetch_array($resultado);
         $row = mysqli_num_rows($resultado);
@@ -31,6 +32,7 @@ mysqli_select_db($conn,'$dbname');
         } else{
             $_SESSION['tipo'] = $tipo;
             $_SESSION['id'] = $row_fetch['ID_vendedor'];
+            $_SESSION['nome'] = $row_fetch['Nome_vendedor'];
             header("Location:index.php");
             exit();
         }

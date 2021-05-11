@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="_css/style.css"/>
-    <link rel="stylesheet" href="_css/profile_cliente.css"/>
+    <link rel="stylesheet" href="_css/profile.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>BuyHere - Home</title>
+    <title>BuyHere - Perfil</title>
 </head>
 <body>
     <header id="cabecalho">
