@@ -42,7 +42,6 @@ if(isset($_SESSION['tipo'])){
                 <div id="descricao">
                     <h1 id="titulo">Descrição do produto</h1>
                     <p id="texto"><?php echo $row['Descricao'] ?></p>
-                    <p id="vendedor">Vendido por: </p>
                 </div>
                 <?php
             }?>

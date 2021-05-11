@@ -6,6 +6,7 @@ $senha = md5($_POST['senha_login']);
 $tipo = $_POST['tipo_login'];
 mysqli_select_db($conn,'$dbname');
 
+
     if ($tipo == 'Cliente'){
         $sql = "SELECT ID_cliente, Nome_cliente, Email_cliente, Senha_cliente FROM cliente WHERE Email_cliente = '$email' AND Senha_cliente = '$senha'";
         $resultado = mysqli_query($conn, $sql);

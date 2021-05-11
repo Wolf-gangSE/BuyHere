@@ -17,6 +17,7 @@ if(isset($_SESSION['tipo'])){
     $name_session = $_SESSION['nome'];
 
     if ($session_tipo == 'Vendedor'){
+        
         if (isset($_FILES['img-pd'])){
             $imagem = $_FILES['img-pd']['name'];
             $pasta_dir = "_images/imagensProdutos/";

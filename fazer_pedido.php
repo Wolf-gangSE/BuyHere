@@ -27,8 +27,12 @@ if(isset($_SESSION['tipo'])){
                     $Estoque = (($estoque_ant) - ($quantidade));
                     $sql_update = "UPDATE produto SET Estoque = '$Estoque' WHERE ID_produto = 3";
                     if(mysqli_query($conn,$sql_update)){
-                        echo"<script language='javascript' type='text/javascript'>alert('Pedido cadastrado com sucesso!);window.location.href='index.php'</script>";
+                        echo"<script language='javascript' type='text/javascript'>alert('Pedido cadastrado com sucesso!');window.location.href='index.php'</script>";
+                    } else {
+                        echo"<script language='javascript' type='text/javascript'>alert('Ops!');window.location.href='pedido.php'</script>";
                     }
+                } else{
+                    echo"<script language='javascript' type='text/javascript'>alert('Ops!');window.location.href='pedido.php'</script>";
                 }
             } else {
                 echo "<script language='javascript' type='text/javascript'>alert('A quantidade selecionada é maior que o estoque disponível.');window.location.href='index.php';</script>";
