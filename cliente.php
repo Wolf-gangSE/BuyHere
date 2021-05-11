@@ -14,6 +14,7 @@
         <nav id="menu">
             <ul>
                 <li><a href="cliente.php">Inicial</a></li>
+                <li><a href="pedido.php">Pedidos</a></li>
                 <li><a href="profile_cliente.php">Perfil</a></li>
             </ul>
         </nav>
@@ -29,6 +30,6 @@
         });
         </script>
     </div>
-    <footer id="rodape"><p>Feito por ------ <br/> Universidade de Pernambuco - Campus Garanhuns</p></footer>
+    <footer id="rodape"><p>Universidade de Pernambuco - Campus Garanhuns</p></footer>
 </body>
 </html>

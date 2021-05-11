@@ -2,27 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Roboto+Mono:wght@300&display=swap');
 
 div#corpo {
-    padding-bottom: 30px;
+    padding-bottom: 75px;
 }
 
 div#dados {
-    padding-top: 20px;
+    padding-top: 50px;
     width: 40%;
     margin-right: 30%;
     margin-left: 30%;
     background-color: white;
     border-radius: 30px;
-    text-align: center;
+    padding-bottom: 30px;
 }
+
+img#sair {
+    width: 30px;
+    margin: -5px;
+}
+
 p {
     padding-top: 5px;
     font-family: 'Montserrat', sans-serif;
     font-size: 14pt;
+    margin-left: 100px;
 }
 
 h4 {
-    text-align: center;
     margin: 5px; 
     font-family: 'Roboto Mono', monospace;
     font-size: 12pt;
+    margin-left: 100px;
 }

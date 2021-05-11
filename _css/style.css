@@ -67,9 +67,6 @@ div#corpo {
 }
 
 div.produtos {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
     margin-left: -20px;
     margin-right: -20px;
     padding-bottom: 10px;

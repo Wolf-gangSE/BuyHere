@@ -17,7 +17,7 @@
                 <li><a href="vendedor.php">Inicial</a></li>
                 <li><a href="cadprod.html">Cadastro</a></li>
                 <li><a href="profile_vendedor.php">Perfil</a></li>
-                <li><a href="logout.php">Sair</a></li>
+                <li><a href="logout.php"><img id="sair" src="_images/logout.png"></a></li>
             </ul>
         </nav>
     </header>
@@ -33,6 +33,6 @@
 		});
         </script>
     </div>
-    <footer id="rodape"><p>Feito por ------ <br/> Universidade de Pernambuco - Campus Garanhuns</p></footer>
+    <footer id="rodape"><p>Universidade de Pernambuco - Campus Garanhuns</p></footer>
 </body>
 </html>

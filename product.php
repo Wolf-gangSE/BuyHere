@@ -33,6 +33,6 @@
         </script>
         </form>
     </div>
-    <footer id="rodape"><h4>Feito por ------</h4></footer>
+    <footer id="rodape"><h4>Universidade de Pernambuco - Campus Garanhuns</h4></footer>
 </body>
 </html>

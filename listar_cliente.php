@@ -29,7 +29,7 @@ if(isset($_SESSION['tipo'])){
                             Telefone <h4><?php echo $row['Telefone_cliente']; ?></h4>
                         </p>
                         <p>
-                            Email <h4><?php echo $row['Email_cliente']; ?><h4>
+                            Email <h4><?php echo $row['Email_cliente']; ?></h4>
                         </p>
                         <p>
                             Cep <h4><?php echo $row['CEP_cliente']; ?></h4>

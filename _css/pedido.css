@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Roboto+Mono:wght@300&display=swap');
+
+div#principal {
+    padding-bottom: 50px;
+}
+
+div#produto {
+    background-color: white;
+    display: inline-block;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    border: 2pt, black;
+}
+
+img#img-p {
+    margin-left: 75px;
+    width: 400px;
+}
+
+div#img-div {
+    margin: 30px;
+    display: inline-block;
+}
+
+div#detalhes {
+    margin-left: 50px;
+    display: inline-block;
+}
+
+p.nome-p {
+    width: 300px ;
+    font-size: 25pt;
+    font-weight: bold;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+}
+
+h1#preco-p {
+    text-align: left;
+}
+
+input#quantidade {
+    width: 50px;
+}
+
+p#estoque {
+    color: gray;
+}
+
+p#frete {
+    color: #008037;
+}
+
+div#buttons {
+    display: inline-block;
+}
+
+button {
+    width: 300px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+button#btn-descricao {
+    margin-right: 50px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 20pt;
+    border-color: black;
+    
+}
+
+button#btn-descricao:hover {
+    background-color: black;
+    color: white;
+}
+
+button#btn-pedido {
+    background-color: black;
+    font-size: 20pt;
+    font-weight: bold;
+    color: white;
+}
+
+button#pedido:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+div#descricao {
+    margin-top: 50px;
+    padding-top: 50px;
+    background-color: white;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    border-radius: 4px;
+    padding-bottom: 50px;
+    display: none;
+}
+
+div#descricao h1#titulo {
+    font-size: 16pt;
+    font-family: 'Montserrat', sans-serif;
+}
+
+div#descricao h1#titulo:after {
+    content: ' ';
+    display: block;
+    width: 50%;
+    height: 2px;
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+    background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+}
+
+div#descricao p#texto {
+    font-size: 12pt;
+    word-wrap: break-word;
+    font-family: 'Roboto Mono', monospace;
+}
+
+div#descricao p#vendedor {
+    font-size: 12pt;
+    word-wrap: break-word;
+    color: gray;
+    font-family: 'Roboto Mono', monospace;
+}
