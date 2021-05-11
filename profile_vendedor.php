@@ -14,8 +14,10 @@
         <img id="logo" src="_images/BuyHere.png"/>
         <nav id="menu">
             <ul>
+                <li><a href="vendedor.php">Inicial</a></li>
                 <li><a href="cadprod.html">Cadastro</a></li>
                 <li><a href="profile_vendedor.php">Perfil</a></li>
+                <li><a href="logout.php">Sair</a></li>
             </ul>
         </nav>
     </header>

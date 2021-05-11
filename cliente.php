@@ -13,7 +13,7 @@
         <img id="logo" src="_images/BuyHere.png"/>
         <nav id="menu">
             <ul>
-                <li><a href="cliente.html">Inicial</a></li>
+                <li><a href="cliente.php">Inicial</a></li>
                 <li><a href="profile_cliente.php">Perfil</a></li>
             </ul>
         </nav>

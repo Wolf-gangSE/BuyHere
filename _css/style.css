@@ -55,6 +55,7 @@ footer#rodape {
     text-align: center;
     padding-top:30px;
     padding-bottom: 30px;
+    margin-bottom: -20px;
     margin-left: -20px;
     margin-right: -20px;
 }
@@ -66,6 +67,9 @@ div#corpo {
 }
 
 div.produtos {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
     margin-left: -20px;
     margin-right: -20px;
     padding-bottom: 10px;
@@ -73,13 +77,16 @@ div.produtos {
 }
 
 div.lista-produtos {
+    
     margin-bottom: 50px;
     margin-right: 75px;
     margin-left: 150px;
-    display: inline-block;
 }
 
 div.produto {
+    padding-top: auto;
+    padding-bottom: auto;
+    border-radius: 30px;
     width: 400px;
     margin-left: 10px;
     margin-right: 10px;
@@ -96,7 +103,9 @@ h1#introducao {
 }
 
 img.img-p {
+    border-radius: 30px;
     width: 400px;
+    height: 400px;
 }
 
 h2.nome-p {

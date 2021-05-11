@@ -12,6 +12,7 @@ div#dados {
     margin-left: 30%;
     background-color: white;
     border-radius: 30px;
+    text-align: center;
 }
 p {
     padding-top: 5px;
@@ -20,6 +21,7 @@ p {
 }
 
 h4 {
+    text-align: center;
     margin: 5px; 
     font-family: 'Roboto Mono', monospace;
     font-size: 12pt;
