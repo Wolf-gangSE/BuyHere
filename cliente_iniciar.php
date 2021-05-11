@@ -20,7 +20,7 @@ if(isset($_SESSION['tipo'])){
             <?php
             while($row = mysqli_fetch_array($resultado)) {
                 ?>
-                        <a href="product.html" class="produto"><div id="produto-1" class="produto">
+                        <a href="product.php" class="produto"><div id="produto-1" class="produto">
                             <?php echo '<img id="img-p1" class="img-p" src="' . $row['Imagem'] . '"/>'; ?>
                             <h2 id="nome-p1" class="nome-p"><?php echo $row['Nome'] ?></h2>
                             <h1 id="preco-p1" class="preco-p"><?php echo 'R$' . $row['Preco_produto'] ?></h1>

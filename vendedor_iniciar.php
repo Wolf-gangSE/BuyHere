@@ -7,7 +7,7 @@ if(isset($_SESSION['tipo'])){
     $tipo_session = $_SESSION['tipo'];
     $ID_session = $_SESSION['id'];
     $name_session = $_SESSION['nome'];
-    $sql = "SELECT ID_vendedor, Imagem, Nome, Preco_produto FROM produto";
+    $sql = "SELECT * FROM produto";
     
     if ($tipo_session == 'Vendedor') {
         $resultado = mysqli_query($conn, $sql);
@@ -22,7 +22,7 @@ if(isset($_SESSION['tipo'])){
                 if($ID_session == $row['ID_vendedor']){
 
                 ?>
-                        <a href="product.html" class="produto"><div id="produto-1" class="produto">
+                        <a href="product.php" class="produto"><div id="produto-1" class="produto">
                             <?php echo '<img id="img-p1" class="img-p" src="' . $row['Imagem'] . '"/>'; ?>
                             <h2 id="nome-p1" class="nome-p"><?php echo $row['Nome'] ?></h2>
                             <h1 id="preco-p1" class="preco-p"><?php echo 'R$' . $row['Preco_produto'] ?></h1>
