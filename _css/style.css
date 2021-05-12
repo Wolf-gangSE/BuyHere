@@ -85,8 +85,7 @@ div.produto {
     padding-bottom: auto;
     border-radius: 30px;
     width: 400px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px;
     display: inline-block;
     background-color: white;
 }

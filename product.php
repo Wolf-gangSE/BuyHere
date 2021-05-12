@@ -10,6 +10,15 @@
     <title>BuyHere - Produto</title>
 </head>
 <script src="_javascript/produto.js"></script>
+<?php
+session_start();
+if(isset($_SESSION['tipo'])){ 
+    $tipo_session = $_SESSION['tipo'];
+    if ($tipo_session == 'Cliente') {
+        $id_produto = $_GET['id'];
+    }
+}
+?>
 <body>
     <header id="cabecalho">
         <img id="logo" src="_images/BuyHere.png"/>
@@ -23,14 +32,20 @@
     <div id="corpo">
         <form id="fpedido" method="post" action="fazer_pedido.php">
         <span id="conteudo"></span>
-        <script>
+        <?php if ($tipo_session == 'Cliente') { echo "<script>
         $(document).ready(function () {
-                $.post('product_iniciar.php', function(retorna){
-                    //Subtitui o valor no seletor id="conteudo"
-                    $("#conteudo").html(retorna);
+                $.post('product_iniciar.php', {id_produto: " . $id_produto . "}, function(retorna){
+                    $('#conteudo').html(retorna);
                 });
         });
-        </script>
+        </script>"; } else { echo "<script>
+            $(document).ready(function () {
+                    $.post('product_iniciar.php', function(retorna){
+                        $('#conteudo').html(retorna);
+                    });
+            });
+            </script>"; }
+            ?>
         </form>
     </div>
     <footer id="rodape"><h4>Universidade de Pernambuco - Campus Garanhuns</h4></footer>

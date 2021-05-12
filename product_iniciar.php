@@ -2,12 +2,13 @@
 session_start();
 include('config.php');
 mysqli_select_db($conn,'$dbname');
+$ID_produto = $_POST['id_produto'];
 
 if(isset($_SESSION['tipo'])){
     $tipo_session = $_SESSION['tipo'];
     $ID_session = $_SESSION['id'];
     $name_session = $_SESSION['nome'];
-    $sql = "SELECT * FROM produto WHERE ID_produto = 3";
+    $sql = "SELECT * FROM produto WHERE ID_produto = $ID_produto";
 
     if ($tipo_session == 'Cliente') {
         $resultado = mysqli_query($conn, $sql);
@@ -30,6 +31,9 @@ if(isset($_SESSION['tipo'])){
                         <p>
                             <label for="quantidade">Quantidade</label>
                             <input type="number" oninput="this.value = Math.abs(this.value)" min='0' name="quantidade" id="quantidade" required="required" name="quantidade"/>
+                        </p>
+                        <p>
+                            <?php echo '<input id="prodId" name="prodId" type="hidden" value="' . $ID_produto . '">' ?>
                         </p>
                         <p id="frete"><?php echo 'Frete: R$' . $row['Preco_frete'] ?></p>
                         <div id="buttons">
